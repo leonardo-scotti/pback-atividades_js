@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Exibindo números em ordem crescente</h1>
+    <p>A visualização é feita pelo console.</p>
+    <script>
+        let value1 = prompt('Digite um número:')
+        let value2 = prompt('Digite outro número:')
+
+        if(value1 == value2) {
+            alert('Digite números diferentes. Recarregue a página.')
+        } else if(value1 > value2) {
+            let i = value2
+            while(i <= value1) {
+                console.log(`Número: ${i}`)
+                i++
+            }
+        } else {
+            let i = value1
+            while(i <= value2) {
+                console.log(`Número: ${i}`)
+                i++
+            }
+        }
+    </script>
+</body>
+</html>

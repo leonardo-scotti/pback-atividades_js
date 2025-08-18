@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h1>Exibindo tabuada</h1>
+    <p>A visualização é feita pelo console.</p>
+    <script>
+        let multiplicando = prompt('Digite o multiplicando da tabuada:')
+        let multiplicador = prompt('Digite o multiplicador máximo:')
+        let produto;
+
+        for(let i = 0; i <= multiplicador; i++){
+            produto = multiplicando * i
+            console.log(`${multiplicando} x ${i} = ${produto}`)
+        }
+    </script>
+</body>
+</html>
